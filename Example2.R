@@ -20,6 +20,14 @@ classify_for <- function(beta, xtrain, ytrain, xtest, ytest){
   xbar2 = colMeans(xtrain[ytrain == 2, ]) # sample mean for class 2
   
   # Calculate class assignments for xtest in a for loop
+  ntest = nrow(xtest)
+  ypred = rep(1,ntest)
+  for(i in 1:ntest){
+    #apply h(x) rule to the ith row of xtest
+    h1 = as.numeric(crossprod(beta,xtest[i,]-xbar1)^2)
+    h2 = as.numeric(crossprod(beta,xtest[i,]-xbar2)^2)
+    
+  }
   
   # Calculate % error using ytest
 
