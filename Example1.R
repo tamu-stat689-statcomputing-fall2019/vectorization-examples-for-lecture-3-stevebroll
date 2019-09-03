@@ -3,7 +3,7 @@
 square_for <- function(x){
   # [ToDo] Use the for loop
   y = NULL
-  for(i in x){
+  for(i in 1:length(x)){
     y = c(y, x[i]^2)
   }
   return(y)
@@ -16,6 +16,7 @@ square_sapply <- function(x){
 
 square_vec <- function(x){
   # [ToDo] Use power(^) function in vector form
+  x^2
 }
 
 square_vec2 <- function(x){
