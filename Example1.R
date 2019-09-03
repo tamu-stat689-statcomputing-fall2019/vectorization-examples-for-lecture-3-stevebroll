@@ -2,7 +2,11 @@
 
 square_for <- function(x){
   # [ToDo] Use the for loop
-  
+  y = NULL
+  for(i in x){
+    y = c(y, x[i]^2)
+  }
+  return(y)
 }
 
 square_sapply <- function(x){
