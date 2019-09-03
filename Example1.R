@@ -11,7 +11,7 @@ square_for <- function(x){
 
 square_sapply <- function(x){
   # [ToDo] Use the sapply function
-  
+  y = sapply(x, function(a) a^2)
 }
 
 square_vec <- function(x){
