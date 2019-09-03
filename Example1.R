@@ -43,6 +43,7 @@ microbenchmark(
   square_for(x),
   square_sapply(x),
   square_vec(x),
-  square_vec2(x)
+  square_vec2(x),
+  square_vec3(x)
 )
 
