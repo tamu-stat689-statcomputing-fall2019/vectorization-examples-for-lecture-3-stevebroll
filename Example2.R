@@ -26,10 +26,12 @@ classify_for <- function(beta, xtrain, ytrain, xtest, ytest){
     #apply h(x) rule to the ith row of xtest
     h1 = as.numeric(crossprod(beta,xtest[i,]-xbar1)^2)
     h2 = as.numeric(crossprod(beta,xtest[i,]-xbar2)^2)
-    
+    if (h1 > h2){
+      ybred[i] = 2
+    }
   }
-  
   # Calculate % error using ytest
+  error = (sum(ytest != ypred) / ntest) * 100
 
   # Return predictions and error
   return(list(ypred = ypred, error = error))
