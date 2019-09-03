@@ -16,7 +16,8 @@ classify_for <- function(beta, xtrain, ytrain, xtest, ytest){
   # [ToDo] Code discriminant analysis classifier using for loop
   
   # Calculate sample means based on training data
- 
+  xbar1 = colMeans(xtrain[ytrain == 1, ]) # sample mean for class 1
+  xbar2 = colMeans(xtrain[ytrain == 2, ]) # sample mean for class 2
   
   # Calculate class assignments for xtest in a for loop
   
