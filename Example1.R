@@ -11,17 +11,15 @@ square_for <- function(x){
 
 square_sapply <- function(x){
   # [ToDo] Use the sapply function
-  y = sapply(x, function(a) a^2)
+  sapply(x, function(a) a^2)
 }
 
 square_vec <- function(x){
   # [ToDo] Use power(^) function in vector form
-  
 }
 
 square_vec2 <- function(x){
   # [ToDo] Use multiplication(*) function in vector form
-
 }
 
 # [ToDo] Create a vector x of size 100,000 of normal variables
