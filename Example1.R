@@ -21,6 +21,7 @@ square_vec <- function(x){
 
 square_vec2 <- function(x){
   # [ToDo] Use multiplication(*) function in vector form
+  x*x
 }
 
 # [ToDo] Create a vector x of size 100,000 of normal variables
